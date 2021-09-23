@@ -1,0 +1,20 @@
+{
+  "name": "vue-repro",
+  "private": true,
+  "description": "Not a package.",
+  "scripts": {
+    "test_vue": "node compile-vue.js src/App.vue src/App.ts",
+    "test_tsc": "npm run test_vue; tsc",
+    "test_webpack": "webpack",
+    "clean": "rm -f dist/*.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/types": "latest",
+    "vue": "3.2.14",
+    "ts-loader": "latest",
+    "typescript": "latest",
+    "vue-loader": "next",
+    "webpack-cli": "latest"
+  }
+}
